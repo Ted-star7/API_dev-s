@@ -15,7 +15,7 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        return Customer::all();
+        return new CustomerCollection(Customer::all());
     }
 
     /**
@@ -39,7 +39,7 @@ class CustomerController extends Controller
      */
     public function show(Customer $customer)
     {
-        return $customer;
+        return new CustomerResource($customer);
     }
 
     /**
