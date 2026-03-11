@@ -1,0 +1,4 @@
+$kind: collection
+name: Invoices
+description: Invoice resource endpoints (CRUD operations)
+order: 3000

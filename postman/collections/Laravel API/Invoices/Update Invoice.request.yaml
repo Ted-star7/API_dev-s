@@ -1,0 +1,24 @@
+$kind: http-request
+name: Update Invoice
+method: PUT
+url: '{{baseUrl}}/api/v1/invoices/:invoice'
+order: 4000
+headers:
+  - key: Accept
+    value: application/json
+  - key: Content-Type
+    value: application/json
+pathVariables:
+  - key: invoice
+    value: '{{invoice_id}}'
+    description: Invoice ID
+body:
+  type: json
+  content: |-
+    {
+      "customer_id": 1,
+      "amount": 200.00,
+      "status": "paid",
+      "billed_date": "2026-03-10",
+      "paid_date": "2026-03-15T10:30:00"
+    }

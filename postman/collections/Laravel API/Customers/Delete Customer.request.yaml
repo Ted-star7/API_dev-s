@@ -1,0 +1,12 @@
+$kind: http-request
+name: Delete Customer
+method: DELETE
+url: '{{baseUrl}}/api/v1/customer/:customer'
+order: 5000
+headers:
+  - key: Accept
+    value: application/json
+pathVariables:
+  - key: customer
+    value: '{{customer_id}}'
+    description: Customer ID

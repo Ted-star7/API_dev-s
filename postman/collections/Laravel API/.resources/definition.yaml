@@ -1,0 +1,15 @@
+$kind: collection
+name: Laravel API
+description: API collection for Laravel API's Dev project. Includes Customer and Invoice resources with Sanctum authentication.
+variables:
+  - key: baseUrl
+    value: 'http://localhost'
+  - key: customer_id
+    value: '1'
+  - key: invoice_id
+    value: '1'
+auth:
+  type: bearer
+  credentials:
+    - key: token
+      value: '{{sanctum_token}}'

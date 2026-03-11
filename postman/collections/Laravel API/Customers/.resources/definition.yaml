@@ -1,0 +1,4 @@
+$kind: collection
+name: Customers
+description: Customer resource endpoints (CRUD operations)
+order: 2000

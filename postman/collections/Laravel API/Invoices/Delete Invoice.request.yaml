@@ -1,0 +1,12 @@
+$kind: http-request
+name: Delete Invoice
+method: DELETE
+url: '{{baseUrl}}/api/v1/invoices/:invoice'
+order: 5000
+headers:
+  - key: Accept
+    value: application/json
+pathVariables:
+  - key: invoice
+    value: '{{invoice_id}}'
+    description: Invoice ID

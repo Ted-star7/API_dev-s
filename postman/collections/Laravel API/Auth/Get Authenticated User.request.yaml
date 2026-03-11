@@ -1,0 +1,8 @@
+$kind: http-request
+name: Get Authenticated User
+method: GET
+url: '{{baseUrl}}/api/user'
+order: 1000
+headers:
+  - key: Accept
+    value: application/json
